@@ -15,11 +15,12 @@ public class AddressBook {
             System.out.println("\t--MENU--");
             System.out.println("1: Add New Person      ");
             System.out.println("2: Display Records     ");
-            System.out.println("3: Exit		       \n");
+	    System.out.println("3: Edit Person     ");
+	    System.out.println("4: Exit                \n");
             System.out.println("--- Enter Your Choice ---");
-            
+
             choice = InputUtil.getIntValue();
-            
+
             switch(choice)
             {
                 case 1 :
@@ -28,10 +29,13 @@ public class AddressBook {
                 case 2 :
                     help.displayRecord();
                     break;
-                case 3 :
+		case 3 :
+                    help.editRecord();
+                    break;
+                case 4 :
                 	 i=1;
                      break;
-                 default :
+                default :
                      System.out.println("Please Enter Valid Option!!!");
             }	
         }
